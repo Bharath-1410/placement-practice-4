@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <style>
+        body{
+            margin: -1rem 0;
+            padding: 0;
+            height: 100vh;
+            /* overflow: hidden; */
+        }
+        .background-img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            opacity: 1;
+        }
+        .content{
+            margin: 0 5%;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.5rem;
+            color: white;
+            width: 50%;
+            /* background-color: rgb(0, 0, 0, 0.3); */
+        }
+        .characters{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
+        .table-heads{
+            display: inline-flex;
+            width: 100%;
+        }
+        .table-heads h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: x-large;
+            display: inline;
+            width: 50%;
+            text-align: center;
+            color: antiquewhite;
+        }
+        table tr{
+            width: 50%;
+        }
+        table tr td{
+            width: 30%;
+        }
+        table tr td img{
+            border-top-left-radius: 60%;
+            border: 3px solid white;
+            border-bottom-right-radius: 60%;
+            border-radius: 50%;
+            aspect-ratio: 3/4;
+            width: 85%;
+            height: 10rem;
+        }
+        table{
+            backdrop-filter: blur(0px) saturate(180%);
+            -webkit-backdrop-filter: blur(0px) saturate(180%);
+            background-color: rgba(17, 25, 40, 0.55);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.125);
+            padding: 3%;
+            width: 49%;
+        }
+        
+    </style>
+</head>
+<body>
+    <br>
+    <img src="background.jpg" alt="" class="background-img">
+    <section class="content">
+        <center style="height: 5rem;"><h1>The Marvel Universe</h1></center>
+        <div class="table-heads">
+            <h2>Hero</h2>
+            <h2>Villan</h2>
+        </div>
+        <section class="characters">
+            <table>
+                <tr>
+                    <td><img src="iron man.jpeg" alt=""></td>
+                    <td><img src="hulk.jpg" alt=""></td>
+                    <td><img src="wanda.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="rocket.jpg" alt=""></td>
+                    <td><img src="mcu-heroes-star-lord.webp" alt=""></td>
+                    <td><img src="gamora.jpg" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="chris.webp" alt=""></td>
+                    <td><img src="arrow.webp" alt=""></td>
+                    <td><img src="Chadwick-Boseman-as-Black-Panther-Featured-Image.webp" alt=""></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><img src="villan1.jpg" alt=""></td>
+                    <td><img src="villan2.webp" alt=""></td>
+                    <td><img src="villan3.jpeg" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="villan4.png" alt=""></td>
+                    <td><img src="villan5.jpeg" alt=""></td>
+                    <td><img src="villan6.jpeg" alt=""></td>
+                </tr>
+                <tr>
+                    <td><img src="villan7.jpeg" alt=""></td>
+                    <td><img src="villan8.jpeg" alt=""></td>
+                    <td><img src="villan9.jpeg" alt=""></td>
+                </tr>
+            </table>
+        </section>
+    </section>
+</body>
+</html>
